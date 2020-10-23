@@ -56,15 +56,55 @@
 		F96B87472542C6580099BA25 /* PosysaevSA_HW2.4 */ = {
 			isa = PBXGroup;
 			children = (
-				F96B87482542C6580099BA25 /* AppDelegate.swift */,
-				F96B874A2542C6580099BA25 /* SceneDelegate.swift */,
-				F96B874C2542C6580099BA25 /* ViewController.swift */,
-				F96B874E2542C6580099BA25 /* Main.storyboard */,
-				F96B87512542C6590099BA25 /* Assets.xcassets */,
-				F96B87532542C6590099BA25 /* LaunchScreen.storyboard */,
-				F96B87562542C6590099BA25 /* Info.plist */,
+				F96B875E2542C6860099BA25 /* SupportingFiles */,
+				F96B87612542C7300099BA25 /* Resourses */,
+				F96B87642542C7650099BA25 /* Models */,
+				F96B87652542C7730099BA25 /* Controllers */,
+				F96B87632542C7500099BA25 /* Views */,
 			);
 			path = PosysaevSA_HW2.4;
+			sourceTree = "<group>";
+		};
+		F96B875E2542C6860099BA25 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F96B87482542C6580099BA25 /* AppDelegate.swift */,
+				F96B874A2542C6580099BA25 /* SceneDelegate.swift */,
+				F96B87562542C6590099BA25 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F96B87612542C7300099BA25 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				F96B87512542C6590099BA25 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		F96B87632542C7500099BA25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F96B874E2542C6580099BA25 /* Main.storyboard */,
+				F96B87532542C6590099BA25 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F96B87642542C7650099BA25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F96B87652542C7730099BA25 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F96B874C2542C6580099BA25 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V594626Y7H;
-				INFOPLIST_FILE = PosysaevSA_HW2.4/Info.plist;
+				INFOPLIST_FILE = PosysaevSA_HW2.4/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.ustlab-1c.PosysaevSA-HW2-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V594626Y7H;
-				INFOPLIST_FILE = PosysaevSA_HW2.4/Info.plist;
+				INFOPLIST_FILE = PosysaevSA_HW2.4/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.ustlab-1c.PosysaevSA-HW2-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
