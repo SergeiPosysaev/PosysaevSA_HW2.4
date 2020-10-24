@@ -11,13 +11,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
+   
     let userData = UserAndPassword(name: UserAndPassword.setNameAndPassword().0,
                                    password: UserAndPassword.setNameAndPassword().1)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        passwordField.returnKeyType = .done
+        usernameField.returnKeyType = .next
+        
+        usernameField.delegate = self
+        passwordField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,6 +52,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     //Actions
