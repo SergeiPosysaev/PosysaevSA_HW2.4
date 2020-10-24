@@ -90,7 +90,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         } else {
             performSegue(withIdentifier: "showMainView", sender: nil)
         }
-        
+    }
+    
+    @IBAction func unwindSegueToMainScreen(segue: UIStoryboardSegue) {
+        cleartextField(notEraseName: false)
     }
 }
 
