@@ -5,10 +5,13 @@
 //  Created by Sergei Posysaev on 23.10.2020.
 //
 
-struct User {
+struct UserAndPassword {
     let name: String
-    let password: String
-    
+    let password: String    
 }
 
-
+extension UserAndPassword {
+    static func setNameAndPassword() -> (String, String) {
+        (userName: "Username", password: "Password")
+    }
+}
