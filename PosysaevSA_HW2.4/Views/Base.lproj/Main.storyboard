@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4335" y="-945"/>
+            <point key="canvasLocation" x="-4223" y="-1045"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="ZWn-eO-ydU">
@@ -145,23 +145,42 @@
         <!--About-->
         <scene sceneID="67c-Jw-zGM">
             <objects>
-                <viewController id="jHO-B5-NYp" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="jHO-B5-NYp" customClass="AboutViewController" customModule="PosysaevSA_HW2_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gvB-xu-p0U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj8-oR-BKm">
+                                <rect key="frame" x="16" y="8" width="288" height="483"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="B5Y-Wb-Ly0"/>
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B5Y-Wb-Ly0" firstAttribute="trailing" secondItem="yj8-oR-BKm" secondAttribute="trailing" constant="16" id="5FV-gq-Bbc"/>
+                            <constraint firstItem="yj8-oR-BKm" firstAttribute="top" secondItem="B5Y-Wb-Ly0" secondAttribute="top" constant="8" id="5Ge-F1-G4z"/>
+                            <constraint firstItem="B5Y-Wb-Ly0" firstAttribute="bottom" secondItem="yj8-oR-BKm" secondAttribute="bottom" constant="8" id="Vjj-QG-zH7"/>
+                            <constraint firstItem="yj8-oR-BKm" firstAttribute="leading" secondItem="B5Y-Wb-Ly0" secondAttribute="leading" constant="16" id="vA7-PI-1EC"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="text.book.closed" catalog="system" id="58a-nL-Y29"/>
+                    <tabBarItem key="tabBarItem" title="About" image="doc" catalog="system" id="6bv-Je-vY2"/>
+                    <navigationItem key="navigationItem" id="b88-zA-gdE"/>
+                    <connections>
+                        <outlet property="textAreaLabel" destination="yj8-oR-BKm" id="lhm-wW-HUK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hI-Ag-CE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1862" y="-1119"/>
+            <point key="canvasLocation" x="-1946" y="-1136"/>
         </scene>
         <!--Galery-->
         <scene sceneID="xOY-gl-lEy">
             <objects>
-                <viewController id="qiv-Jb-G2b" sceneMemberID="viewController">
+                <viewController id="qiv-Jb-G2b" customClass="GaleryViewController" customModule="PosysaevSA_HW2_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JxI-Ky-NiW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xj5-cR-d1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2657" y="-387"/>
+            <point key="canvasLocation" x="-2753" y="-636"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5l4-vi-USZ">
@@ -188,18 +207,18 @@
                     <connections>
                         <segue destination="OSt-vi-yxa" kind="relationship" relationship="viewControllers" id="L2I-AF-gAq"/>
                         <segue destination="qiv-Jb-G2b" kind="relationship" relationship="viewControllers" id="1NJ-r8-6wc"/>
-                        <segue destination="jHO-B5-NYp" kind="relationship" relationship="viewControllers" id="4RR-Bt-mpS"/>
+                        <segue destination="jHO-B5-NYp" kind="relationship" relationship="viewControllers" id="KNm-mA-4oz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTY-cR-RVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3463" y="-945"/>
+            <point key="canvasLocation" x="-3459" y="-1044"/>
         </scene>
     </scenes>
     <resources>
         <image name="AllDay.ru_Live messenger" width="256" height="256"/>
+        <image name="doc" catalog="system" width="115" height="128"/>
         <image name="rosette" catalog="system" width="106" height="128"/>
-        <image name="text.book.closed" catalog="system" width="115" height="128"/>
         <image name="tropicalstorm" catalog="system" width="91" height="128"/>
     </resources>
 </document>

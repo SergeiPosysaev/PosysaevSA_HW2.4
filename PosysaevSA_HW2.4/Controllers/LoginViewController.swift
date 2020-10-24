@@ -58,8 +58,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
+                
         let destinationVC = tabBarController.viewControllers?.first as! MainViewController
         destinationVC.userName = userData.realName
+        
+        let aboutVC = tabBarController.viewControllers?[2] as! AboutViewController
+        aboutVC.userName = userData.realName
+        
+       // let galeryVC = tabBarController.viewControllers?[1] as! GaleryViewController
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

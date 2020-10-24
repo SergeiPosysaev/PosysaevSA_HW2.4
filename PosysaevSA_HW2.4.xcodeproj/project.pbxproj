@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F926353F2544CE920016E84E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926353E2544CE920016E84E /* AboutViewController.swift */; };
+		F92635422544D2F10016E84E /* GaleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92635412544D2F10016E84E /* GaleryViewController.swift */; };
 		F947D3FA2543712C00E0C7A9 /* userAndPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = F947D3F92543712C00E0C7A9 /* userAndPassword.swift */; };
 		F96B87492542C6580099BA25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B87482542C6580099BA25 /* AppDelegate.swift */; };
 		F96B874B2542C6580099BA25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B874A2542C6580099BA25 /* SceneDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F926353E2544CE920016E84E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		F92635412544D2F10016E84E /* GaleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleryViewController.swift; sourceTree = "<group>"; };
 		F947D3F92543712C00E0C7A9 /* userAndPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userAndPassword.swift; sourceTree = "<group>"; };
 		F96B87452542C6580099BA25 /* PosysaevSA_HW2.4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosysaevSA_HW2.4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96B87482542C6580099BA25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 			children = (
 				F96B874C2542C6580099BA25 /* LoginViewController.swift */,
 				F9EA90502544992E00242FCF /* MainViewController.swift */,
+				F926353E2544CE920016E84E /* AboutViewController.swift */,
+				F92635412544D2F10016E84E /* GaleryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,8 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F926353F2544CE920016E84E /* AboutViewController.swift in Sources */,
 				F96B874D2542C6580099BA25 /* LoginViewController.swift in Sources */,
 				F947D3FA2543712C00E0C7A9 /* userAndPassword.swift in Sources */,
+				F92635422544D2F10016E84E /* GaleryViewController.swift in Sources */,
 				F96B87492542C6580099BA25 /* AppDelegate.swift in Sources */,
 				F96B874B2542C6580099BA25 /* SceneDelegate.swift in Sources */,
 				F9EA90512544992E00242FCF /* MainViewController.swift in Sources */,
