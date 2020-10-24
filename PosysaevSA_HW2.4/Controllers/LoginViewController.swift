@@ -75,7 +75,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     //Actions
-    @IBAction func forgorUserNameButton() {
+    @IBAction func forgotUserNameButton() {
         alertAction(with: "Warning!", and: "Login is: \(userData.name)")
     }
     

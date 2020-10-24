@@ -46,7 +46,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="136" height="30"/>
                                                 <state key="normal" title="Forgot User Name?"/>
                                                 <connections>
-                                                    <action selector="forgorUserNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8y-OK-vZH"/>
+                                                    <action selector="forgotUserNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8y-OK-vZH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeb-cl-AKt">
