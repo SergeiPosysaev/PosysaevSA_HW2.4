@@ -34,15 +34,24 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             self.cleartextField()
-            self.usernameField.becomeFirstResponder()
+            if self.usernameField.text != self.userData.name {
+                self.cleartextField(withOutUserName: false)
+                self.usernameField.becomeFirstResponder()
+            } else {
+                self.passwordField.becomeFirstResponder()
+            }
         }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
     
-    private func cleartextField() {
-        usernameField.text = ""
-        passwordField.text = ""
+    private func cleartextField(withOutUserName: Bool = true) {
+        if withOutUserName {
+            passwordField.text = ""
+        } else {
+            usernameField.text = ""
+            passwordField.text = ""
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -78,7 +87,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if usernameField.text != userData.name || passwordField.text != userData.password {
             alertAction(with: "Error!", and: "Your login (or password) is not right!")
             cleartextField()
-            usernameField.becomeFirstResponder()
+            passwordField.becomeFirstResponder()
         } else {
             performSegue(withIdentifier: "showMainView", sender: nil)
         }
