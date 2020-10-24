@@ -55,7 +55,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
+        if textField.tag == 0 {
+            self.passwordField.becomeFirstResponder()
+            return true
+        } else if textField.tag == 1 {
+            self.view.endEditing(true)
+            loginButton()
+        }
         return false
     }
     
