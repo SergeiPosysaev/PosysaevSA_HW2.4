@@ -11,13 +11,12 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var labelWelcome: UILabel!
     
-
-    var userAndPassword: (String, String)!
+    var userName: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //labelWelcome.text = userAndPassword.0
+        labelWelcome.text = "Welcome, \(userName ?? "")!"
     }
     
 

@@ -80,45 +80,52 @@
                     <connections>
                         <outlet property="passwordField" destination="QlP-U6-o1c" id="Gje-tv-xUt"/>
                         <outlet property="usernameField" destination="uc6-C5-1t1" id="Itc-qP-CBl"/>
-                        <segue destination="FNt-C1-WNW" kind="show" identifier="showMainView" id="tng-sE-pae"/>
+                        <segue destination="OSt-vi-yxa" kind="show" identifier="showMainView" id="xZl-pO-462"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3092" y="-940"/>
+            <point key="canvasLocation" x="-3540" y="-971"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="ZWn-eO-ydU">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="OSt-vi-yxa" customClass="MainViewController" customModule="PosysaevSA_HW2_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="66l-Qs-1lT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQY-P6-jtb">
-                                <rect key="frame" x="127" y="30" width="66.5" height="34"/>
+                                <rect key="frame" x="126.5" y="30" width="67" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prw-Y3-43I">
-                                <rect key="frame" x="116" y="404" width="88" height="45"/>
+                                <rect key="frame" x="116" y="467" width="88" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Log out"/>
                                 <connections>
                                     <action selector="logOutButton" destination="OSt-vi-yxa" eventType="touchUpInside" id="nk8-vE-69U"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllDay.ru_Live messenger" translatesAutoresizingMaskIntoConstraints="NO" id="M1E-wN-N2t">
+                                <rect key="frame" x="85" y="156" width="150" height="256"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yLL-Za-ztG"/>
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="prw-Y3-43I" firstAttribute="top" secondItem="M1E-wN-N2t" secondAttribute="bottom" constant="55" id="2cV-gG-Me8"/>
+                            <constraint firstItem="M1E-wN-N2t" firstAttribute="leading" secondItem="yLL-Za-ztG" secondAttribute="leading" constant="85" id="7bS-yB-iX1"/>
                             <constraint firstItem="lQY-P6-jtb" firstAttribute="centerX" secondItem="66l-Qs-1lT" secondAttribute="centerX" id="GbK-wC-nOo"/>
                             <constraint firstItem="lQY-P6-jtb" firstAttribute="top" secondItem="yLL-Za-ztG" secondAttribute="top" constant="30" id="Jc4-Au-vm3"/>
                             <constraint firstItem="prw-Y3-43I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yLL-Za-ztG" secondAttribute="leading" constant="116" id="MNx-kp-sdp"/>
                             <constraint firstItem="yLL-Za-ztG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="prw-Y3-43I" secondAttribute="trailing" constant="116" id="aEx-md-PCM"/>
                             <constraint firstItem="yLL-Za-ztG" firstAttribute="bottom" secondItem="prw-Y3-43I" secondAttribute="bottom" constant="50" id="b4X-0Y-uUG"/>
+                            <constraint firstItem="M1E-wN-N2t" firstAttribute="centerX" secondItem="66l-Qs-1lT" secondAttribute="centerX" id="cvd-jx-7yg"/>
                             <constraint firstItem="prw-Y3-43I" firstAttribute="centerX" secondItem="66l-Qs-1lT" secondAttribute="centerX" id="h8P-Dd-OlW"/>
+                            <constraint firstItem="M1E-wN-N2t" firstAttribute="centerY" secondItem="66l-Qs-1lT" secondAttribute="centerY" id="hz2-rv-xbX"/>
                             <constraint firstItem="yLL-Za-ztG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lQY-P6-jtb" secondAttribute="trailing" id="kRR-Yj-EvI"/>
                             <constraint firstItem="lQY-P6-jtb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yLL-Za-ztG" secondAttribute="leading" id="tm0-Sh-hXM"/>
                         </constraints>
@@ -131,25 +138,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ap-HQ-zGL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1301" y="-1104"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="msM-El-SS9">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="FNt-C1-WNW" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="t2o-89-TO3"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BOz-Wl-IKL">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="OSt-vi-yxa" kind="relationship" relationship="viewControllers" id="iBA-AI-9AY"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HgQ-3E-hvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2147" y="-940"/>
+            <point key="canvasLocation" x="-2663" y="-972"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AllDay.ru_Live messenger" width="256" height="256"/>
+    </resources>
 </document>

@@ -15,10 +15,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     let userData = UserAndPassword(name: UserAndPassword.setNameAndPassword().0,
                                    password: UserAndPassword.setNameAndPassword().1)
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         passwordField.returnKeyType = .done
         usernameField.returnKeyType = .next
         
@@ -35,7 +34,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             self.cleartextField()
             if self.usernameField.text != self.userData.name {
-                self.cleartextField(withOutUserName: false)
+                self.cleartextField(notEraseName: false)
                 self.usernameField.becomeFirstResponder()
             } else {
                 self.passwordField.becomeFirstResponder()
@@ -45,8 +44,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         present(alert, animated: true)
     }
     
-    private func cleartextField(withOutUserName: Bool = true) {
-        if withOutUserName {
+    private func cleartextField(notEraseName: Bool = true) {
+        if notEraseName {
             passwordField.text = ""
         } else {
             usernameField.text = ""
@@ -56,7 +55,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let mainVC = segue.destination as? MainViewController else { return }
-        mainVC.userAndPassword = (userData.name, userData.password)
+        mainVC.userName = userData.name
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -73,12 +72,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         return false
     }
-    
-//    @IBAction func unwindSegueToMainScreen( segue: UIStoryboardSegue) {
-//        guard let svc = segue.source as? MainViewController else { return }
-//        
-//    }
-    
+        
     //Actions
     @IBAction func forgotUserNameButton() {
         alertAction(with: "Warning!", and: "Login is: \(userData.name)")
