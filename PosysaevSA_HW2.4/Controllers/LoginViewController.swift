@@ -28,7 +28,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             self.cleartextField()
-            self.usernameField.resignFirstResponder()
+            self.usernameField.becomeFirstResponder()
         }
         alert.addAction(okAction)
         present(alert, animated: true)
