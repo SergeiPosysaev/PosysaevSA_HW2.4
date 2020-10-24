@@ -39,6 +39,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordField.text = ""
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let mainVC = segue.destination as? MainViewController else { return }
+        mainVC.userAndPassword = (userData.name, userData.password)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     //Actions
     @IBAction func forgorUserNameButton() {
         alertAction(with: "Warning!", and: "Login is: \(userData.name)")
@@ -49,8 +58,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginButton() {
+        if usernameField.text != userData.name || passwordField.text != userData.password {
+            alertAction(with: "Error!", and: "Your login (or password) is not right!")
+            cleartextField()
+            usernameField.becomeFirstResponder()
+        } else {
+            performSegue(withIdentifier: "showMainView", sender: nil)
+        }
         
     }
-    
 }
 
