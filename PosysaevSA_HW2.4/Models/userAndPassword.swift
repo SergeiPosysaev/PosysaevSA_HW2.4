@@ -7,7 +7,8 @@
 
 struct UserAndPassword {
     let name: String
-    let password: String    
+    let password: String
+    let realName: String
 }
 
 extension UserAndPassword {

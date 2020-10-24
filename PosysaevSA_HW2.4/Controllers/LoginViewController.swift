@@ -13,7 +13,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
    
     let userData = UserAndPassword(name: UserAndPassword.setNameAndPassword().0,
-                                   password: UserAndPassword.setNameAndPassword().1)
+                                   password: UserAndPassword.setNameAndPassword().1,
+                                   realName: "Sergei Posysaev")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         usernameField.delegate = self
         passwordField.delegate = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,7 +58,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let mainVC = segue.destination as? MainViewController else { return }
-        mainVC.userName = userData.name
+        mainVC.userName = userData.realName
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
