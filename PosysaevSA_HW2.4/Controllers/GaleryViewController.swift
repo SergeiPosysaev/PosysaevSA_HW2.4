@@ -9,12 +9,15 @@ import UIKit
 
 class GaleryViewController: UIViewController {
 
+    var userName: String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //
+        self.navigationItem.title = userName
     }
+  
     
-
 
 }

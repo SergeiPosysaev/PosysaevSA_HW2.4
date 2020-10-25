@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F926353F2544CE920016E84E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926353E2544CE920016E84E /* AboutViewController.swift */; };
-		F92635422544D2F10016E84E /* GaleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92635412544D2F10016E84E /* GaleryViewController.swift */; };
+		F9263545254588C50016E84E /* PhotosGaleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9263544254588C50016E84E /* PhotosGaleryCollectionViewController.swift */; };
+		F9263549254590BD0016E84E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9263548254590BD0016E84E /* PhotoCollectionViewCell.swift */; };
 		F947D3FA2543712C00E0C7A9 /* userAndPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = F947D3F92543712C00E0C7A9 /* userAndPassword.swift */; };
 		F96B87492542C6580099BA25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B87482542C6580099BA25 /* AppDelegate.swift */; };
 		F96B874B2542C6580099BA25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B874A2542C6580099BA25 /* SceneDelegate.swift */; };
@@ -16,12 +17,15 @@
 		F96B87502542C6580099BA25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96B874E2542C6580099BA25 /* Main.storyboard */; };
 		F96B87522542C6590099BA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96B87512542C6590099BA25 /* Assets.xcassets */; };
 		F96B87552542C6590099BA25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96B87532542C6590099BA25 /* LaunchScreen.storyboard */; };
+		F9AF2C932545B589002FFCC2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF2C922545B589002FFCC2 /* PhotoViewController.swift */; };
+		F9AF2C972545BDE5002FFCC2 /* DataImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF2C962545BDE5002FFCC2 /* DataImages.swift */; };
 		F9EA90512544992E00242FCF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EA90502544992E00242FCF /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F926353E2544CE920016E84E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		F92635412544D2F10016E84E /* GaleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleryViewController.swift; sourceTree = "<group>"; };
+		F9263544254588C50016E84E /* PhotosGaleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGaleryCollectionViewController.swift; sourceTree = "<group>"; };
+		F9263548254590BD0016E84E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		F947D3F92543712C00E0C7A9 /* userAndPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userAndPassword.swift; sourceTree = "<group>"; };
 		F96B87452542C6580099BA25 /* PosysaevSA_HW2.4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosysaevSA_HW2.4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96B87482542C6580099BA25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +35,8 @@
 		F96B87512542C6590099BA25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F96B87542542C6590099BA25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F96B87562542C6590099BA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9AF2C922545B589002FFCC2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		F9AF2C962545BDE5002FFCC2 /* DataImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataImages.swift; sourceTree = "<group>"; };
 		F9EA90502544992E00242FCF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				F947D3F92543712C00E0C7A9 /* userAndPassword.swift */,
+				F9AF2C962545BDE5002FFCC2 /* DataImages.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,7 +121,9 @@
 				F96B874C2542C6580099BA25 /* LoginViewController.swift */,
 				F9EA90502544992E00242FCF /* MainViewController.swift */,
 				F926353E2544CE920016E84E /* AboutViewController.swift */,
-				F92635412544D2F10016E84E /* GaleryViewController.swift */,
+				F9263544254588C50016E84E /* PhotosGaleryCollectionViewController.swift */,
+				F9263548254590BD0016E84E /* PhotoCollectionViewCell.swift */,
+				F9AF2C922545B589002FFCC2 /* PhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,12 +199,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F926353F2544CE920016E84E /* AboutViewController.swift in Sources */,
+				F9263549254590BD0016E84E /* PhotoCollectionViewCell.swift in Sources */,
+				F9263545254588C50016E84E /* PhotosGaleryCollectionViewController.swift in Sources */,
+				F9AF2C972545BDE5002FFCC2 /* DataImages.swift in Sources */,
 				F96B874D2542C6580099BA25 /* LoginViewController.swift in Sources */,
 				F947D3FA2543712C00E0C7A9 /* userAndPassword.swift in Sources */,
-				F92635422544D2F10016E84E /* GaleryViewController.swift in Sources */,
 				F96B87492542C6580099BA25 /* AppDelegate.swift in Sources */,
 				F96B874B2542C6580099BA25 /* SceneDelegate.swift in Sources */,
 				F9EA90512544992E00242FCF /* MainViewController.swift in Sources */,
+				F9AF2C932545B589002FFCC2 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

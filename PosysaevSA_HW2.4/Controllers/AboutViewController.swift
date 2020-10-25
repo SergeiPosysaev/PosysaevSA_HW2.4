@@ -12,7 +12,7 @@ class AboutViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var textAreaLabel: UILabel!
     
-    var userName: String!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()

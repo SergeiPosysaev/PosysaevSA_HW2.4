@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -85,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4223" y="-1045"/>
+            <point key="canvasLocation" x="-4624" y="-1045"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="ZWn-eO-ydU">
@@ -150,9 +151,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj8-oR-BKm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дополнительно описание. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj8-oR-BKm">
                                 <rect key="frame" x="16" y="8" width="288" height="483"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -175,23 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hI-Ag-CE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1946" y="-1136"/>
-        </scene>
-        <!--Galery-->
-        <scene sceneID="xOY-gl-lEy">
-            <objects>
-                <viewController id="qiv-Jb-G2b" customClass="GaleryViewController" customModule="PosysaevSA_HW2_4" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JxI-Ky-NiW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ZuP-GF-bdL"/>
-                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Galery" image="tropicalstorm" catalog="system" id="Y22-DY-zUm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xj5-cR-d1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2753" y="-636"/>
+            <point key="canvasLocation" x="-1914" y="-1395"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5l4-vi-USZ">
@@ -206,19 +190,119 @@
                     </tabBar>
                     <connections>
                         <segue destination="OSt-vi-yxa" kind="relationship" relationship="viewControllers" id="L2I-AF-gAq"/>
-                        <segue destination="qiv-Jb-G2b" kind="relationship" relationship="viewControllers" id="1NJ-r8-6wc"/>
                         <segue destination="jHO-B5-NYp" kind="relationship" relationship="viewControllers" id="KNm-mA-4oz"/>
+                        <segue destination="VDK-ld-8FR" kind="relationship" relationship="viewControllers" id="3Lq-B1-8C2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTY-cR-RVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3459" y="-1044"/>
+            <point key="canvasLocation" x="-3795" y="-1046"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="nsN-gq-UpC">
+            <objects>
+                <collectionViewController id="ByE-9f-kYv" customClass="PhotosGaleryCollectionViewController" customModule="PosysaevSA_HW2_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="eUG-J9-OAL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="foF-O6-aze">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="z14-RB-1nf" customClass="PhotoCollectionViewCell" customModule="PosysaevSA_HW2_4" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R2V-DL-Bcl">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bbe-Ht-QVh">
+                                            <rect key="frame" x="1" y="1" width="126" height="126"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="bbe-Ht-QVh" secondAttribute="bottom" constant="1" id="0s7-N0-MUZ"/>
+                                        <constraint firstItem="bbe-Ht-QVh" firstAttribute="top" secondItem="R2V-DL-Bcl" secondAttribute="top" constant="1" id="KTF-lG-dPV"/>
+                                        <constraint firstAttribute="trailing" secondItem="bbe-Ht-QVh" secondAttribute="trailing" constant="1" id="lTL-7G-ZMf"/>
+                                        <constraint firstItem="bbe-Ht-QVh" firstAttribute="leading" secondItem="R2V-DL-Bcl" secondAttribute="leading" constant="1" id="nGI-DX-YOE"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="scrPhotoView" destination="bbe-Ht-QVh" id="G6Q-LH-Fyo"/>
+                                    <segue destination="zOZ-DI-gtk" kind="presentation" identifier="picPhotoSegue" id="DKv-oH-pak"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ByE-9f-kYv" id="EZw-jw-xPW"/>
+                            <outlet property="delegate" destination="ByE-9f-kYv" id="smU-Xg-TUg"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Photos" id="zwj-J0-Pr8"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZ1-iE-Sp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2102" y="-694"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="49S-3s-djs">
+            <objects>
+                <viewController id="zOZ-DI-gtk" customClass="PhotoViewController" customModule="PosysaevSA_HW2_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e6Y-v7-G3e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u8c-bg-ZBW">
+                                <rect key="frame" x="16" y="189" width="288" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="KGD-jC-K0b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6ao-a4-Diq"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u8c-bg-ZBW" firstAttribute="leading" secondItem="6ao-a4-Diq" secondAttribute="leading" constant="16" id="05I-PQ-FjP"/>
+                            <constraint firstItem="u8c-bg-ZBW" firstAttribute="centerY" secondItem="e6Y-v7-G3e" secondAttribute="centerY" id="bWD-T9-N0E"/>
+                            <constraint firstItem="6ao-a4-Diq" firstAttribute="trailing" secondItem="u8c-bg-ZBW" secondAttribute="trailing" constant="16" id="ejB-GV-ki4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="u8c-bg-ZBW" id="e0Z-HH-hMB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0oz-i5-6hh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1376.25" y="-681.33802816901414"/>
+        </scene>
+        <!--Galery-->
+        <scene sceneID="Q3Q-8i-Pvo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VDK-ld-8FR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Galery" image="greetingcard" catalog="system" id="Pci-jz-WS1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nuf-4a-ac5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ByE-9f-kYv" kind="relationship" relationship="rootViewController" id="reC-vc-nml"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Klg-wZ-SAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2822" y="-694"/>
         </scene>
     </scenes>
     <resources>
         <image name="AllDay.ru_Live messenger" width="256" height="256"/>
         <image name="doc" catalog="system" width="115" height="128"/>
+        <image name="greetingcard" catalog="system" width="107" height="128"/>
         <image name="rosette" catalog="system" width="106" height="128"/>
-        <image name="tropicalstorm" catalog="system" width="91" height="128"/>
     </resources>
 </document>

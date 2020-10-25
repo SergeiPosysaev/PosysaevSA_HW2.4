@@ -25,7 +25,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         usernameField.delegate = self
         passwordField.delegate = self
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,10 +61,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let destinationVC = tabBarController.viewControllers?.first as! MainViewController
         destinationVC.userName = userData.realName
         
-        let aboutVC = tabBarController.viewControllers?[2] as! AboutViewController
-        aboutVC.userName = userData.realName
-        
-       // let galeryVC = tabBarController.viewControllers?[1] as! GaleryViewController
+        //let aboutVC = tabBarController.viewControllers?[2] as! AboutViewController
+//
+//        guard let navigationController = segue.destination as? UINavigationController else { return }
+//        navigationController.title = "New title"
+       
+        // let galeryVC = navigationController.viewControllers.first as! GaleryViewController
+       // galeryVC.userName = userData.realName
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
