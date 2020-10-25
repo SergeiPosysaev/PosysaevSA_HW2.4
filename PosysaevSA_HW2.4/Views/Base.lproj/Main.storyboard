@@ -151,8 +151,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дополнительно описание. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj8-oR-BKm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj8-oR-BKm">
                                 <rect key="frame" x="16" y="8" width="288" height="483"/>
+                                <mutableString key="text">Египет … Дочь Кассиопеи –
+Цефéйи и царя Цефея,
+Девúц затмила красотою,
+Цариц, рождая зависть нимф,
+И поплатилась бы судьбою,
+Если бы не было героя,
+О чём гласит вот этот миф…
+В душе завистливой Цирцеи
+Родился план – отдать злодею –
+Дракону, Демону-Киту
+И выдать замуж дочь Цефейи,
+Но как осуществить мечту?
+И обольстительная фея
+Уговорила Посейдона
+В страну чудовище послать –
+В Египет, в царство фараона,
+Чтобы любовь завоевать.
+Какая зависти цена?
+Ведь знала фея, что Дракон –
+Давно в Цефейи дочь влюблён,
+А с ним – обречена Она. </mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -262,13 +283,22 @@
                                     <constraint firstAttribute="height" constant="170" id="KGD-jC-K0b"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ну, тут суть в передаче изображения. Практической пользы, конечно нет..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmR-Ra-FcM">
+                                <rect key="frame" x="16" y="8" width="288" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6ao-a4-Diq"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="u8c-bg-ZBW" firstAttribute="leading" secondItem="6ao-a4-Diq" secondAttribute="leading" constant="16" id="05I-PQ-FjP"/>
+                            <constraint firstItem="EmR-Ra-FcM" firstAttribute="top" secondItem="6ao-a4-Diq" secondAttribute="top" constant="8" id="PJX-JE-JWu"/>
                             <constraint firstItem="u8c-bg-ZBW" firstAttribute="centerY" secondItem="e6Y-v7-G3e" secondAttribute="centerY" id="bWD-T9-N0E"/>
                             <constraint firstItem="6ao-a4-Diq" firstAttribute="trailing" secondItem="u8c-bg-ZBW" secondAttribute="trailing" constant="16" id="ejB-GV-ki4"/>
+                            <constraint firstItem="6ao-a4-Diq" firstAttribute="trailing" secondItem="EmR-Ra-FcM" secondAttribute="trailing" constant="16" id="gCS-it-Uh0"/>
+                            <constraint firstItem="EmR-Ra-FcM" firstAttribute="leading" secondItem="6ao-a4-Diq" secondAttribute="leading" constant="16" id="q6D-Qe-9Sb"/>
                         </constraints>
                     </view>
                     <connections>
